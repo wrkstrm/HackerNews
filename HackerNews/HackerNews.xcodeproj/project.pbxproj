@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E7EB2561FFE03EE00701EA2 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = /Users/rismay/Github/HackerNews/HackerNews/HackerNews/Cartfile; sourceTree = "<absolute>"; };
 		6EBF48631FF4A94F00E7592E /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBF48661FF4A94F00E7592E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EBF48681FF4A94F00E7592E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		6EBF48651FF4A94F00E7592E /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				6E7EB2561FFE03EE00701EA2 /* Cartfile */,
 				6EBF48661FF4A94F00E7592E /* AppDelegate.swift */,
 				6EBF48681FF4A94F00E7592E /* FirstViewController.swift */,
 				6EBF486A1FF4A94F00E7592E /* SecondViewController.swift */,
