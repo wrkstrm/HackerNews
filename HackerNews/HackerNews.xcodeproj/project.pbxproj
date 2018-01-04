@@ -16,6 +16,9 @@
 		6E1A96FA1FFE0E000066BB83 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A96F81FFE0E000066BB83 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E7EB25B1FFE090300701EA2 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 6E7EB2591FFE090300701EA2 /* Cartfile.resolved */; };
 		6E7EB25C1FFE090300701EA2 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 6E7EB25A1FFE090300701EA2 /* Cartfile */; };
+		6EB6EF131FFE18F300F97D20 /* CouchbaseLiteSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB6EF121FFE18F300F97D20 /* CouchbaseLiteSwift.framework */; };
+		6EB6EF141FFE18FE00F97D20 /* CouchbaseLiteSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB6EF121FFE18F300F97D20 /* CouchbaseLiteSwift.framework */; };
+		6EB6EF151FFE18FE00F97D20 /* CouchbaseLiteSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB6EF121FFE18F300F97D20 /* CouchbaseLiteSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6EBF48671FF4A94F00E7592E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF48661FF4A94F00E7592E /* AppDelegate.swift */; };
 		6EBF48691FF4A94F00E7592E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF48681FF4A94F00E7592E /* FirstViewController.swift */; };
 		6EBF486B1FF4A94F00E7592E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF486A1FF4A94F00E7592E /* SecondViewController.swift */; };
@@ -31,6 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				6EB6EF151FFE18FE00F97D20 /* CouchbaseLiteSwift.framework in Embed Frameworks */,
 				6E1A96F31FFE0D3F0066BB83 /* ReactiveCocoa.framework in Embed Frameworks */,
 				6E1A96F71FFE0D660066BB83 /* Result.framework in Embed Frameworks */,
 				6E1A96FA1FFE0E000066BB83 /* ReactiveSwift.framework in Embed Frameworks */,
@@ -45,8 +49,168 @@
 		6E1A96F11FFE0D3F0066BB83 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		6E1A96F51FFE0D660066BB83 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		6E1A96F81FFE0E000066BB83 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		6E1A96FB1FFE13650066BB83 /* FirebaseAnalytics */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebaseAnalytics; sourceTree = "<group>"; };
+		6E1A96FC1FFE13650066BB83 /* FIRAnalytics+AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FIRAnalytics+AppDelegate.h"; sourceTree = "<group>"; };
+		6E1A96FD1FFE13650066BB83 /* FIRAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRAnalytics.h; sourceTree = "<group>"; };
+		6E1A96FE1FFE13650066BB83 /* FIRAnalyticsConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		6E1A96FF1FFE13650066BB83 /* FIRAnalyticsSwiftNameSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRAnalyticsSwiftNameSupport.h; sourceTree = "<group>"; };
+		6E1A97001FFE13650066BB83 /* FIRApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRApp.h; sourceTree = "<group>"; };
+		6E1A97011FFE13650066BB83 /* FIRConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRConfiguration.h; sourceTree = "<group>"; };
+		6E1A97021FFE13650066BB83 /* FirebaseAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseAnalytics.h; sourceTree = "<group>"; };
+		6E1A97031FFE13650066BB83 /* FIREventNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIREventNames.h; sourceTree = "<group>"; };
+		6E1A97041FFE13650066BB83 /* FIROptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIROptions.h; sourceTree = "<group>"; };
+		6E1A97051FFE13650066BB83 /* FIRParameterNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRParameterNames.h; sourceTree = "<group>"; };
+		6E1A97061FFE13650066BB83 /* FIRUserPropertyNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRUserPropertyNames.h; sourceTree = "<group>"; };
+		6E1A97081FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A970B1FFE13650066BB83 /* FirebaseCore */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebaseCore; sourceTree = "<group>"; };
+		6E1A970C1FFE13650066BB83 /* FIRAnalyticsConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		6E1A970D1FFE13650066BB83 /* FIRApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRApp.h; sourceTree = "<group>"; };
+		6E1A970E1FFE13650066BB83 /* FIRConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRConfiguration.h; sourceTree = "<group>"; };
+		6E1A970F1FFE13650066BB83 /* FirebaseCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseCore.h; sourceTree = "<group>"; };
+		6E1A97101FFE13650066BB83 /* FIRLoggerLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRLoggerLevel.h; sourceTree = "<group>"; };
+		6E1A97111FFE13650066BB83 /* FIROptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIROptions.h; sourceTree = "<group>"; };
+		6E1A97131FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A97161FFE13650066BB83 /* FirebaseCoreDiagnostics */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebaseCoreDiagnostics; sourceTree = "<group>"; };
+		6E1A97171FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A971A1FFE13650066BB83 /* FirebaseInstanceID */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebaseInstanceID; sourceTree = "<group>"; };
+		6E1A971B1FFE13650066BB83 /* FirebaseInstanceID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseInstanceID.h; sourceTree = "<group>"; };
+		6E1A971C1FFE13650066BB83 /* FIRInstanceID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRInstanceID.h; sourceTree = "<group>"; };
+		6E1A971E1FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A97211FFE13650066BB83 /* FirebaseNanoPB */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebaseNanoPB; sourceTree = "<group>"; };
+		6E1A97231FFE13650066BB83 /* GoogleToolboxForMac */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GoogleToolboxForMac; sourceTree = "<group>"; };
+		6E1A97241FFE13650066BB83 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
+		6E1A97251FFE13650066BB83 /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMDebugThreadValidation.h; sourceTree = "<group>"; };
+		6E1A97261FFE13650066BB83 /* GTMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		6E1A97271FFE13650066BB83 /* GTMLocalizedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMLocalizedString.h; sourceTree = "<group>"; };
+		6E1A97281FFE13650066BB83 /* GTMLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMLogger.h; sourceTree = "<group>"; };
+		6E1A97291FFE13650066BB83 /* GTMMethodCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMMethodCheck.h; sourceTree = "<group>"; };
+		6E1A972A1FFE13650066BB83 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		6E1A972B1FFE13650066BB83 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		6E1A972C1FFE13650066BB83 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		6E1A972D1FFE13650066BB83 /* GTMStringEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMStringEncoding.h; sourceTree = "<group>"; };
+		6E1A972E1FFE13650066BB83 /* GTMTypeCasting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMTypeCasting.h; sourceTree = "<group>"; };
+		6E1A972F1FFE13650066BB83 /* GTMURLBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMURLBuilder.h; sourceTree = "<group>"; };
+		6E1A97311FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A97341FFE13650066BB83 /* pb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		6E1A97351FFE13650066BB83 /* pb_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		6E1A97361FFE13650066BB83 /* pb_decode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		6E1A97371FFE13650066BB83 /* pb_encode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		6E1A97391FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A973B1FFE13650066BB83 /* nanopb */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = nanopb; sourceTree = "<group>"; };
+		6E1A973E1FFE13650066BB83 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		6E1A973F1FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A97401FFE13650066BB83 /* NOTICES */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICES; sourceTree = "<group>"; };
+		6E1A97411FFE13650066BB83 /* FirebasePerformance */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebasePerformance; sourceTree = "<group>"; };
+		6E1A97421FFE13650066BB83 /* FirebasePerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebasePerformance.h; sourceTree = "<group>"; };
+		6E1A97431FFE13650066BB83 /* FIRHTTPMetric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRHTTPMetric.h; sourceTree = "<group>"; };
+		6E1A97441FFE13650066BB83 /* FIRPerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRPerformance.h; sourceTree = "<group>"; };
+		6E1A97451FFE13650066BB83 /* FIRPerformanceAttributable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRPerformanceAttributable.h; sourceTree = "<group>"; };
+		6E1A97461FFE13650066BB83 /* FIRTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRTrace.h; sourceTree = "<group>"; };
+		6E1A97481FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A974B1FFE13650066BB83 /* FirebaseSwizzlingUtilities */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebaseSwizzlingUtilities; sourceTree = "<group>"; };
+		6E1A974C1FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A974F1FFE13650066BB83 /* GTMSessionFetcher */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GTMSessionFetcher; sourceTree = "<group>"; };
+		6E1A97501FFE13650066BB83 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMGatherInputStream.h; sourceTree = "<group>"; };
+		6E1A97511FFE13650066BB83 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMMIMEDocument.h; sourceTree = "<group>"; };
+		6E1A97521FFE13650066BB83 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		6E1A97531FFE13650066BB83 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMSessionFetcher.h; sourceTree = "<group>"; };
+		6E1A97541FFE13650066BB83 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		6E1A97551FFE13650066BB83 /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		6E1A97561FFE13650066BB83 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		6E1A97581FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A975B1FFE13650066BB83 /* Any.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Any.pbobjc.h; sourceTree = "<group>"; };
+		6E1A975C1FFE13650066BB83 /* Api.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Api.pbobjc.h; sourceTree = "<group>"; };
+		6E1A975D1FFE13650066BB83 /* Duration.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Duration.pbobjc.h; sourceTree = "<group>"; };
+		6E1A975E1FFE13650066BB83 /* Empty.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Empty.pbobjc.h; sourceTree = "<group>"; };
+		6E1A975F1FFE13650066BB83 /* FieldMask.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieldMask.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97601FFE13650066BB83 /* GPBArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBArray.h; sourceTree = "<group>"; };
+		6E1A97611FFE13650066BB83 /* GPBArray_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBArray_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97621FFE13650066BB83 /* GPBBootstrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBBootstrap.h; sourceTree = "<group>"; };
+		6E1A97631FFE13650066BB83 /* GPBCodedInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBCodedInputStream.h; sourceTree = "<group>"; };
+		6E1A97641FFE13650066BB83 /* GPBCodedInputStream_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBCodedInputStream_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97651FFE13650066BB83 /* GPBCodedOutputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBCodedOutputStream.h; sourceTree = "<group>"; };
+		6E1A97661FFE13650066BB83 /* GPBCodedOutputStream_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBCodedOutputStream_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97671FFE13650066BB83 /* GPBDescriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBDescriptor.h; sourceTree = "<group>"; };
+		6E1A97681FFE13650066BB83 /* GPBDescriptor_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBDescriptor_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97691FFE13650066BB83 /* GPBDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBDictionary.h; sourceTree = "<group>"; };
+		6E1A976A1FFE13650066BB83 /* GPBDictionary_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBDictionary_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A976B1FFE13650066BB83 /* GPBExtensionInternals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBExtensionInternals.h; sourceTree = "<group>"; };
+		6E1A976C1FFE13650066BB83 /* GPBExtensionRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBExtensionRegistry.h; sourceTree = "<group>"; };
+		6E1A976D1FFE13650066BB83 /* GPBMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBMessage.h; sourceTree = "<group>"; };
+		6E1A976E1FFE13650066BB83 /* GPBMessage_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBMessage_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A976F1FFE13650066BB83 /* GPBProtocolBuffers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBProtocolBuffers.h; sourceTree = "<group>"; };
+		6E1A97701FFE13650066BB83 /* GPBProtocolBuffers_RuntimeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBProtocolBuffers_RuntimeSupport.h; sourceTree = "<group>"; };
+		6E1A97711FFE13650066BB83 /* GPBRootObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBRootObject.h; sourceTree = "<group>"; };
+		6E1A97721FFE13650066BB83 /* GPBRootObject_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBRootObject_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97731FFE13650066BB83 /* GPBRuntimeTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBRuntimeTypes.h; sourceTree = "<group>"; };
+		6E1A97741FFE13650066BB83 /* GPBUnknownField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUnknownField.h; sourceTree = "<group>"; };
+		6E1A97751FFE13650066BB83 /* GPBUnknownField_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUnknownField_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97761FFE13650066BB83 /* GPBUnknownFieldSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUnknownFieldSet.h; sourceTree = "<group>"; };
+		6E1A97771FFE13650066BB83 /* GPBUnknownFieldSet_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUnknownFieldSet_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97781FFE13650066BB83 /* GPBUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUtilities.h; sourceTree = "<group>"; };
+		6E1A97791FFE13650066BB83 /* GPBUtilities_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUtilities_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A977A1FFE13650066BB83 /* GPBWellKnownTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBWellKnownTypes.h; sourceTree = "<group>"; };
+		6E1A977B1FFE13650066BB83 /* GPBWireFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBWireFormat.h; sourceTree = "<group>"; };
+		6E1A977C1FFE13650066BB83 /* SourceContext.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceContext.pbobjc.h; sourceTree = "<group>"; };
+		6E1A977D1FFE13650066BB83 /* Struct.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Struct.pbobjc.h; sourceTree = "<group>"; };
+		6E1A977E1FFE13650066BB83 /* Timestamp.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timestamp.pbobjc.h; sourceTree = "<group>"; };
+		6E1A977F1FFE13650066BB83 /* Type.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Type.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97801FFE13650066BB83 /* Wrappers.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrappers.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97821FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A97841FFE13650066BB83 /* Protobuf */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Protobuf; sourceTree = "<group>"; };
+		6E1A97871FFE13650066BB83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6E1A97881FFE13650066BB83 /* FirebaseABTesting */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebaseABTesting; sourceTree = "<group>"; };
+		6E1A97891FFE13650066BB83 /* FirebaseABTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseABTesting.h; sourceTree = "<group>"; };
+		6E1A978A1FFE13650066BB83 /* FIRExperimentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRExperimentController.h; sourceTree = "<group>"; };
+		6E1A978B1FFE13650066BB83 /* FIRLifecycleEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRLifecycleEvents.h; sourceTree = "<group>"; };
+		6E1A978D1FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A97901FFE13650066BB83 /* FirebaseRemoteConfig */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = FirebaseRemoteConfig; sourceTree = "<group>"; };
+		6E1A97911FFE13650066BB83 /* FirebaseRemoteConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseRemoteConfig.h; sourceTree = "<group>"; };
+		6E1A97921FFE13650066BB83 /* FIRRemoteConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIRRemoteConfig.h; sourceTree = "<group>"; };
+		6E1A97941FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A97971FFE13650066BB83 /* Any.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Any.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97981FFE13650066BB83 /* Api.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Api.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97991FFE13650066BB83 /* Duration.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Duration.pbobjc.h; sourceTree = "<group>"; };
+		6E1A979A1FFE13650066BB83 /* Empty.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Empty.pbobjc.h; sourceTree = "<group>"; };
+		6E1A979B1FFE13650066BB83 /* FieldMask.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieldMask.pbobjc.h; sourceTree = "<group>"; };
+		6E1A979C1FFE13650066BB83 /* GPBArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBArray.h; sourceTree = "<group>"; };
+		6E1A979D1FFE13650066BB83 /* GPBArray_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBArray_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A979E1FFE13650066BB83 /* GPBBootstrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBBootstrap.h; sourceTree = "<group>"; };
+		6E1A979F1FFE13650066BB83 /* GPBCodedInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBCodedInputStream.h; sourceTree = "<group>"; };
+		6E1A97A01FFE13650066BB83 /* GPBCodedInputStream_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBCodedInputStream_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97A11FFE13650066BB83 /* GPBCodedOutputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBCodedOutputStream.h; sourceTree = "<group>"; };
+		6E1A97A21FFE13650066BB83 /* GPBCodedOutputStream_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBCodedOutputStream_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97A31FFE13650066BB83 /* GPBDescriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBDescriptor.h; sourceTree = "<group>"; };
+		6E1A97A41FFE13650066BB83 /* GPBDescriptor_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBDescriptor_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97A51FFE13650066BB83 /* GPBDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBDictionary.h; sourceTree = "<group>"; };
+		6E1A97A61FFE13650066BB83 /* GPBDictionary_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBDictionary_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97A71FFE13650066BB83 /* GPBExtensionInternals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBExtensionInternals.h; sourceTree = "<group>"; };
+		6E1A97A81FFE13650066BB83 /* GPBExtensionRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBExtensionRegistry.h; sourceTree = "<group>"; };
+		6E1A97A91FFE13650066BB83 /* GPBMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBMessage.h; sourceTree = "<group>"; };
+		6E1A97AA1FFE13650066BB83 /* GPBMessage_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBMessage_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97AB1FFE13650066BB83 /* GPBProtocolBuffers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBProtocolBuffers.h; sourceTree = "<group>"; };
+		6E1A97AC1FFE13650066BB83 /* GPBProtocolBuffers_RuntimeSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBProtocolBuffers_RuntimeSupport.h; sourceTree = "<group>"; };
+		6E1A97AD1FFE13650066BB83 /* GPBRootObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBRootObject.h; sourceTree = "<group>"; };
+		6E1A97AE1FFE13650066BB83 /* GPBRootObject_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBRootObject_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97AF1FFE13650066BB83 /* GPBRuntimeTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBRuntimeTypes.h; sourceTree = "<group>"; };
+		6E1A97B01FFE13650066BB83 /* GPBUnknownField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUnknownField.h; sourceTree = "<group>"; };
+		6E1A97B11FFE13650066BB83 /* GPBUnknownField_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUnknownField_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97B21FFE13650066BB83 /* GPBUnknownFieldSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUnknownFieldSet.h; sourceTree = "<group>"; };
+		6E1A97B31FFE13650066BB83 /* GPBUnknownFieldSet_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUnknownFieldSet_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97B41FFE13650066BB83 /* GPBUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUtilities.h; sourceTree = "<group>"; };
+		6E1A97B51FFE13650066BB83 /* GPBUtilities_PackagePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBUtilities_PackagePrivate.h; sourceTree = "<group>"; };
+		6E1A97B61FFE13650066BB83 /* GPBWellKnownTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBWellKnownTypes.h; sourceTree = "<group>"; };
+		6E1A97B71FFE13650066BB83 /* GPBWireFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBWireFormat.h; sourceTree = "<group>"; };
+		6E1A97B81FFE13650066BB83 /* SourceContext.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceContext.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97B91FFE13650066BB83 /* Struct.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Struct.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97BA1FFE13650066BB83 /* Timestamp.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timestamp.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97BB1FFE13650066BB83 /* Type.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Type.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97BC1FFE13650066BB83 /* Wrappers.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrappers.pbobjc.h; sourceTree = "<group>"; };
+		6E1A97BE1FFE13650066BB83 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6E1A97C01FFE13650066BB83 /* Protobuf */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Protobuf; sourceTree = "<group>"; };
 		6E7EB2591FFE090300701EA2 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		6E7EB25A1FFE090300701EA2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		6EB6EF121FFE18F300F97D20 /* CouchbaseLiteSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchbaseLiteSwift.framework; path = Carthage/Build/iOS/CouchbaseLiteSwift.framework; sourceTree = "<group>"; };
 		6EBF48631FF4A94F00E7592E /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBF48661FF4A94F00E7592E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EBF48681FF4A94F00E7592E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +226,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB6EF131FFE18F300F97D20 /* CouchbaseLiteSwift.framework in Frameworks */,
 				6E1A96F21FFE0D3F0066BB83 /* ReactiveCocoa.framework in Frameworks */,
+				6EB6EF141FFE18FE00F97D20 /* CouchbaseLiteSwift.framework in Frameworks */,
 				6E1A96F61FFE0D660066BB83 /* Result.framework in Frameworks */,
 				6E1A96F91FFE0E000066BB83 /* ReactiveSwift.framework in Frameworks */,
 			);
@@ -74,11 +240,516 @@
 		6E1A96EE1FFE0D1D0066BB83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E1A97C41FFE137D0066BB83 /* Vendor */,
+				6EB6EF121FFE18F300F97D20 /* CouchbaseLiteSwift.framework */,
 				6E1A96F81FFE0E000066BB83 /* ReactiveSwift.framework */,
 				6E1A96F51FFE0D660066BB83 /* Result.framework */,
 				6E1A96F11FFE0D3F0066BB83 /* ReactiveCocoa.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E1A97071FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A96FC1FFE13650066BB83 /* FIRAnalytics+AppDelegate.h */,
+				6E1A96FD1FFE13650066BB83 /* FIRAnalytics.h */,
+				6E1A96FE1FFE13650066BB83 /* FIRAnalyticsConfiguration.h */,
+				6E1A96FF1FFE13650066BB83 /* FIRAnalyticsSwiftNameSupport.h */,
+				6E1A97001FFE13650066BB83 /* FIRApp.h */,
+				6E1A97011FFE13650066BB83 /* FIRConfiguration.h */,
+				6E1A97021FFE13650066BB83 /* FirebaseAnalytics.h */,
+				6E1A97031FFE13650066BB83 /* FIREventNames.h */,
+				6E1A97041FFE13650066BB83 /* FIROptions.h */,
+				6E1A97051FFE13650066BB83 /* FIRParameterNames.h */,
+				6E1A97061FFE13650066BB83 /* FIRUserPropertyNames.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A97091FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97081FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A970A1FFE13650066BB83 /* FirebaseAnalytics.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A96FB1FFE13650066BB83 /* FirebaseAnalytics */,
+				6E1A97071FFE13650066BB83 /* Headers */,
+				6E1A97091FFE13650066BB83 /* Modules */,
+			);
+			path = FirebaseAnalytics.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97121FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A970C1FFE13650066BB83 /* FIRAnalyticsConfiguration.h */,
+				6E1A970D1FFE13650066BB83 /* FIRApp.h */,
+				6E1A970E1FFE13650066BB83 /* FIRConfiguration.h */,
+				6E1A970F1FFE13650066BB83 /* FirebaseCore.h */,
+				6E1A97101FFE13650066BB83 /* FIRLoggerLevel.h */,
+				6E1A97111FFE13650066BB83 /* FIROptions.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A97141FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97131FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A97151FFE13650066BB83 /* FirebaseCore.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A970B1FFE13650066BB83 /* FirebaseCore */,
+				6E1A97121FFE13650066BB83 /* Headers */,
+				6E1A97141FFE13650066BB83 /* Modules */,
+			);
+			path = FirebaseCore.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97181FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97171FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A97191FFE13650066BB83 /* FirebaseCoreDiagnostics.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97161FFE13650066BB83 /* FirebaseCoreDiagnostics */,
+				6E1A97181FFE13650066BB83 /* Modules */,
+			);
+			path = FirebaseCoreDiagnostics.framework;
+			sourceTree = "<group>";
+		};
+		6E1A971D1FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A971B1FFE13650066BB83 /* FirebaseInstanceID.h */,
+				6E1A971C1FFE13650066BB83 /* FIRInstanceID.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A971F1FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A971E1FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A97201FFE13650066BB83 /* FirebaseInstanceID.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A971A1FFE13650066BB83 /* FirebaseInstanceID */,
+				6E1A971D1FFE13650066BB83 /* Headers */,
+				6E1A971F1FFE13650066BB83 /* Modules */,
+			);
+			path = FirebaseInstanceID.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97221FFE13650066BB83 /* FirebaseNanoPB.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97211FFE13650066BB83 /* FirebaseNanoPB */,
+			);
+			path = FirebaseNanoPB.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97301FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97241FFE13650066BB83 /* GTMDebugSelectorValidation.h */,
+				6E1A97251FFE13650066BB83 /* GTMDebugThreadValidation.h */,
+				6E1A97261FFE13650066BB83 /* GTMDefines.h */,
+				6E1A97271FFE13650066BB83 /* GTMLocalizedString.h */,
+				6E1A97281FFE13650066BB83 /* GTMLogger.h */,
+				6E1A97291FFE13650066BB83 /* GTMMethodCheck.h */,
+				6E1A972A1FFE13650066BB83 /* GTMNSData+zlib.h */,
+				6E1A972B1FFE13650066BB83 /* GTMNSDictionary+URLArguments.h */,
+				6E1A972C1FFE13650066BB83 /* GTMNSString+URLArguments.h */,
+				6E1A972D1FFE13650066BB83 /* GTMStringEncoding.h */,
+				6E1A972E1FFE13650066BB83 /* GTMTypeCasting.h */,
+				6E1A972F1FFE13650066BB83 /* GTMURLBuilder.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A97321FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97311FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A97331FFE13650066BB83 /* GoogleToolboxForMac.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97231FFE13650066BB83 /* GoogleToolboxForMac */,
+				6E1A97301FFE13650066BB83 /* Headers */,
+				6E1A97321FFE13650066BB83 /* Modules */,
+			);
+			path = GoogleToolboxForMac.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97381FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97341FFE13650066BB83 /* pb.h */,
+				6E1A97351FFE13650066BB83 /* pb_common.h */,
+				6E1A97361FFE13650066BB83 /* pb_decode.h */,
+				6E1A97371FFE13650066BB83 /* pb_encode.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A973A1FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97391FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A973C1FFE13650066BB83 /* nanopb.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97381FFE13650066BB83 /* Headers */,
+				6E1A973A1FFE13650066BB83 /* Modules */,
+				6E1A973B1FFE13650066BB83 /* nanopb */,
+			);
+			path = nanopb.framework;
+			sourceTree = "<group>";
+		};
+		6E1A973D1FFE13650066BB83 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A970A1FFE13650066BB83 /* FirebaseAnalytics.framework */,
+				6E1A97151FFE13650066BB83 /* FirebaseCore.framework */,
+				6E1A97191FFE13650066BB83 /* FirebaseCoreDiagnostics.framework */,
+				6E1A97201FFE13650066BB83 /* FirebaseInstanceID.framework */,
+				6E1A97221FFE13650066BB83 /* FirebaseNanoPB.framework */,
+				6E1A97331FFE13650066BB83 /* GoogleToolboxForMac.framework */,
+				6E1A973C1FFE13650066BB83 /* nanopb.framework */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		6E1A97471FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97421FFE13650066BB83 /* FirebasePerformance.h */,
+				6E1A97431FFE13650066BB83 /* FIRHTTPMetric.h */,
+				6E1A97441FFE13650066BB83 /* FIRPerformance.h */,
+				6E1A97451FFE13650066BB83 /* FIRPerformanceAttributable.h */,
+				6E1A97461FFE13650066BB83 /* FIRTrace.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A97491FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97481FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A974A1FFE13650066BB83 /* FirebasePerformance.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97411FFE13650066BB83 /* FirebasePerformance */,
+				6E1A97471FFE13650066BB83 /* Headers */,
+				6E1A97491FFE13650066BB83 /* Modules */,
+			);
+			path = FirebasePerformance.framework;
+			sourceTree = "<group>";
+		};
+		6E1A974D1FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A974C1FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A974E1FFE13650066BB83 /* FirebaseSwizzlingUtilities.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A974B1FFE13650066BB83 /* FirebaseSwizzlingUtilities */,
+				6E1A974D1FFE13650066BB83 /* Modules */,
+			);
+			path = FirebaseSwizzlingUtilities.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97571FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97501FFE13650066BB83 /* GTMGatherInputStream.h */,
+				6E1A97511FFE13650066BB83 /* GTMMIMEDocument.h */,
+				6E1A97521FFE13650066BB83 /* GTMReadMonitorInputStream.h */,
+				6E1A97531FFE13650066BB83 /* GTMSessionFetcher.h */,
+				6E1A97541FFE13650066BB83 /* GTMSessionFetcherLogging.h */,
+				6E1A97551FFE13650066BB83 /* GTMSessionFetcherService.h */,
+				6E1A97561FFE13650066BB83 /* GTMSessionUploadFetcher.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A97591FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97581FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A975A1FFE13650066BB83 /* GTMSessionFetcher.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A974F1FFE13650066BB83 /* GTMSessionFetcher */,
+				6E1A97571FFE13650066BB83 /* Headers */,
+				6E1A97591FFE13650066BB83 /* Modules */,
+			);
+			path = GTMSessionFetcher.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97811FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A975B1FFE13650066BB83 /* Any.pbobjc.h */,
+				6E1A975C1FFE13650066BB83 /* Api.pbobjc.h */,
+				6E1A975D1FFE13650066BB83 /* Duration.pbobjc.h */,
+				6E1A975E1FFE13650066BB83 /* Empty.pbobjc.h */,
+				6E1A975F1FFE13650066BB83 /* FieldMask.pbobjc.h */,
+				6E1A97601FFE13650066BB83 /* GPBArray.h */,
+				6E1A97611FFE13650066BB83 /* GPBArray_PackagePrivate.h */,
+				6E1A97621FFE13650066BB83 /* GPBBootstrap.h */,
+				6E1A97631FFE13650066BB83 /* GPBCodedInputStream.h */,
+				6E1A97641FFE13650066BB83 /* GPBCodedInputStream_PackagePrivate.h */,
+				6E1A97651FFE13650066BB83 /* GPBCodedOutputStream.h */,
+				6E1A97661FFE13650066BB83 /* GPBCodedOutputStream_PackagePrivate.h */,
+				6E1A97671FFE13650066BB83 /* GPBDescriptor.h */,
+				6E1A97681FFE13650066BB83 /* GPBDescriptor_PackagePrivate.h */,
+				6E1A97691FFE13650066BB83 /* GPBDictionary.h */,
+				6E1A976A1FFE13650066BB83 /* GPBDictionary_PackagePrivate.h */,
+				6E1A976B1FFE13650066BB83 /* GPBExtensionInternals.h */,
+				6E1A976C1FFE13650066BB83 /* GPBExtensionRegistry.h */,
+				6E1A976D1FFE13650066BB83 /* GPBMessage.h */,
+				6E1A976E1FFE13650066BB83 /* GPBMessage_PackagePrivate.h */,
+				6E1A976F1FFE13650066BB83 /* GPBProtocolBuffers.h */,
+				6E1A97701FFE13650066BB83 /* GPBProtocolBuffers_RuntimeSupport.h */,
+				6E1A97711FFE13650066BB83 /* GPBRootObject.h */,
+				6E1A97721FFE13650066BB83 /* GPBRootObject_PackagePrivate.h */,
+				6E1A97731FFE13650066BB83 /* GPBRuntimeTypes.h */,
+				6E1A97741FFE13650066BB83 /* GPBUnknownField.h */,
+				6E1A97751FFE13650066BB83 /* GPBUnknownField_PackagePrivate.h */,
+				6E1A97761FFE13650066BB83 /* GPBUnknownFieldSet.h */,
+				6E1A97771FFE13650066BB83 /* GPBUnknownFieldSet_PackagePrivate.h */,
+				6E1A97781FFE13650066BB83 /* GPBUtilities.h */,
+				6E1A97791FFE13650066BB83 /* GPBUtilities_PackagePrivate.h */,
+				6E1A977A1FFE13650066BB83 /* GPBWellKnownTypes.h */,
+				6E1A977B1FFE13650066BB83 /* GPBWireFormat.h */,
+				6E1A977C1FFE13650066BB83 /* SourceContext.pbobjc.h */,
+				6E1A977D1FFE13650066BB83 /* Struct.pbobjc.h */,
+				6E1A977E1FFE13650066BB83 /* Timestamp.pbobjc.h */,
+				6E1A977F1FFE13650066BB83 /* Type.pbobjc.h */,
+				6E1A97801FFE13650066BB83 /* Wrappers.pbobjc.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A97831FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97821FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A97851FFE13650066BB83 /* Protobuf.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97811FFE13650066BB83 /* Headers */,
+				6E1A97831FFE13650066BB83 /* Modules */,
+				6E1A97841FFE13650066BB83 /* Protobuf */,
+			);
+			path = Protobuf.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97861FFE13650066BB83 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A974A1FFE13650066BB83 /* FirebasePerformance.framework */,
+				6E1A974E1FFE13650066BB83 /* FirebaseSwizzlingUtilities.framework */,
+				6E1A975A1FFE13650066BB83 /* GTMSessionFetcher.framework */,
+				6E1A97851FFE13650066BB83 /* Protobuf.framework */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		6E1A978C1FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97891FFE13650066BB83 /* FirebaseABTesting.h */,
+				6E1A978A1FFE13650066BB83 /* FIRExperimentController.h */,
+				6E1A978B1FFE13650066BB83 /* FIRLifecycleEvents.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A978E1FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A978D1FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A978F1FFE13650066BB83 /* FirebaseABTesting.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97881FFE13650066BB83 /* FirebaseABTesting */,
+				6E1A978C1FFE13650066BB83 /* Headers */,
+				6E1A978E1FFE13650066BB83 /* Modules */,
+			);
+			path = FirebaseABTesting.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97931FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97911FFE13650066BB83 /* FirebaseRemoteConfig.h */,
+				6E1A97921FFE13650066BB83 /* FIRRemoteConfig.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A97951FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97941FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A97961FFE13650066BB83 /* FirebaseRemoteConfig.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97901FFE13650066BB83 /* FirebaseRemoteConfig */,
+				6E1A97931FFE13650066BB83 /* Headers */,
+				6E1A97951FFE13650066BB83 /* Modules */,
+			);
+			path = FirebaseRemoteConfig.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97BD1FFE13650066BB83 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97971FFE13650066BB83 /* Any.pbobjc.h */,
+				6E1A97981FFE13650066BB83 /* Api.pbobjc.h */,
+				6E1A97991FFE13650066BB83 /* Duration.pbobjc.h */,
+				6E1A979A1FFE13650066BB83 /* Empty.pbobjc.h */,
+				6E1A979B1FFE13650066BB83 /* FieldMask.pbobjc.h */,
+				6E1A979C1FFE13650066BB83 /* GPBArray.h */,
+				6E1A979D1FFE13650066BB83 /* GPBArray_PackagePrivate.h */,
+				6E1A979E1FFE13650066BB83 /* GPBBootstrap.h */,
+				6E1A979F1FFE13650066BB83 /* GPBCodedInputStream.h */,
+				6E1A97A01FFE13650066BB83 /* GPBCodedInputStream_PackagePrivate.h */,
+				6E1A97A11FFE13650066BB83 /* GPBCodedOutputStream.h */,
+				6E1A97A21FFE13650066BB83 /* GPBCodedOutputStream_PackagePrivate.h */,
+				6E1A97A31FFE13650066BB83 /* GPBDescriptor.h */,
+				6E1A97A41FFE13650066BB83 /* GPBDescriptor_PackagePrivate.h */,
+				6E1A97A51FFE13650066BB83 /* GPBDictionary.h */,
+				6E1A97A61FFE13650066BB83 /* GPBDictionary_PackagePrivate.h */,
+				6E1A97A71FFE13650066BB83 /* GPBExtensionInternals.h */,
+				6E1A97A81FFE13650066BB83 /* GPBExtensionRegistry.h */,
+				6E1A97A91FFE13650066BB83 /* GPBMessage.h */,
+				6E1A97AA1FFE13650066BB83 /* GPBMessage_PackagePrivate.h */,
+				6E1A97AB1FFE13650066BB83 /* GPBProtocolBuffers.h */,
+				6E1A97AC1FFE13650066BB83 /* GPBProtocolBuffers_RuntimeSupport.h */,
+				6E1A97AD1FFE13650066BB83 /* GPBRootObject.h */,
+				6E1A97AE1FFE13650066BB83 /* GPBRootObject_PackagePrivate.h */,
+				6E1A97AF1FFE13650066BB83 /* GPBRuntimeTypes.h */,
+				6E1A97B01FFE13650066BB83 /* GPBUnknownField.h */,
+				6E1A97B11FFE13650066BB83 /* GPBUnknownField_PackagePrivate.h */,
+				6E1A97B21FFE13650066BB83 /* GPBUnknownFieldSet.h */,
+				6E1A97B31FFE13650066BB83 /* GPBUnknownFieldSet_PackagePrivate.h */,
+				6E1A97B41FFE13650066BB83 /* GPBUtilities.h */,
+				6E1A97B51FFE13650066BB83 /* GPBUtilities_PackagePrivate.h */,
+				6E1A97B61FFE13650066BB83 /* GPBWellKnownTypes.h */,
+				6E1A97B71FFE13650066BB83 /* GPBWireFormat.h */,
+				6E1A97B81FFE13650066BB83 /* SourceContext.pbobjc.h */,
+				6E1A97B91FFE13650066BB83 /* Struct.pbobjc.h */,
+				6E1A97BA1FFE13650066BB83 /* Timestamp.pbobjc.h */,
+				6E1A97BB1FFE13650066BB83 /* Type.pbobjc.h */,
+				6E1A97BC1FFE13650066BB83 /* Wrappers.pbobjc.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6E1A97BF1FFE13650066BB83 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97BE1FFE13650066BB83 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E1A97C11FFE13650066BB83 /* Protobuf.framework */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97BD1FFE13650066BB83 /* Headers */,
+				6E1A97BF1FFE13650066BB83 /* Modules */,
+				6E1A97C01FFE13650066BB83 /* Protobuf */,
+			);
+			path = Protobuf.framework;
+			sourceTree = "<group>";
+		};
+		6E1A97C21FFE13650066BB83 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A978F1FFE13650066BB83 /* FirebaseABTesting.framework */,
+				6E1A97961FFE13650066BB83 /* FirebaseRemoteConfig.framework */,
+				6E1A97C11FFE13650066BB83 /* Protobuf.framework */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		6E1A97C31FFE13650066BB83 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A973D1FFE13650066BB83 /* Analytics */,
+				6E1A973E1FFE13650066BB83 /* Firebase.h */,
+				6E1A973F1FFE13650066BB83 /* module.modulemap */,
+				6E1A97401FFE13650066BB83 /* NOTICES */,
+				6E1A97861FFE13650066BB83 /* Performance */,
+				6E1A97871FFE13650066BB83 /* README.md */,
+				6E1A97C21FFE13650066BB83 /* RemoteConfig */,
+			);
+			name = Firebase;
+			path = /Users/rismay/Github/HackerNews/HackerNews/Vendor/Firebase;
+			sourceTree = "<absolute>";
+		};
+		6E1A97C41FFE137D0066BB83 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A97C31FFE13650066BB83 /* Firebase */,
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		6E7EB25D1FFE090F00701EA2 /* Build Files */ = {
@@ -206,12 +877,14 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CouchbaseLiteSwift.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CouchbaseLiteSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
